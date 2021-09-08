@@ -1,0 +1,15 @@
+@font-face{
+ font-family: Takota; src: url('Takota.otf');
+}
+
+body{
+    color: white;
+    background-color: #000000;
+    text-align: center;
+}
+
+.title{
+    font-family: Takota;
+    font-size: 180px;
+    text-shadow: -20px 20px #00000050;
+}
