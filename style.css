@@ -1,0 +1,108 @@
+/* 
+-----------------------------------------------------------------------------------------------
+========  I hope you're ready for the worst experience of your life, reading this shit ========
+-----------------------------------------------------------------------------------------------
+*/
+
+/* let's import our fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+
+body {
+    font-family: 'Ubuntu Mono', monospace;
+    background-color: #0f152e;
+    margin: none;
+}
+
+.container { /* polar gave me this code and it works really well so uh thanks :thumbsup: */
+    text-align: center;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.titletext { /* uh yeah it's the title text innit */
+    font-size: 104px;
+    font-family: 'Noto Sans Display', sans-serif;
+    background: -webkit-linear-gradient(0deg, #feac5e, #c779d0, #4bc0c8);
+    -webkit-background-clip: text; /* fuck safari, all my homies hate safari */
+    -webkit-text-fill-color: transparent;
+}
+
+h2 {
+    font-size: 38px;
+    background: -webkit-linear-gradient(180deg, #feac5e, #c779d0, #4bc0c8);
+    -webkit-background-clip: text; /* more safari bullshit */
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 28px;
+    background: -webkit-linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
+    -webkit-background-clip: text; /* more safari bullshit */
+    -webkit-text-fill-color: transparent;
+}
+
+.header { /* hey look at this navbar that was not, i repeat, not stolen form w3schools */
+    margin: 0%;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #00000000;
+    font-size: 22px;
+}
+    
+li {
+    float: left;
+}
+    
+li a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 12px 18px;
+    text-decoration: none;
+}
+    
+li a:hover:not(.active) {
+    background-color: #797979;
+    border-radius: 5px;
+}
+    
+.active {
+    background-image: linear-gradient(90deg, #feac5e80, #c779d080, #4bc0c880);
+    border-radius: 5px;
+} /* ok i lied i did steal it :( */
+
+a.linkbutton {
+    display: inline-block;
+    padding: 1em 1.9em;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Noto Sans Display', sans-serif;
+    color: #FFFFFF;
+    background-image: linear-gradient(90deg, #feac5e, #c779d0, #4bc0c8);
+    box-shadow: inset 0 -0.8em 0 -0.35em rgba(0,0,0,0.17);
+    text-align: center;
+    position: relative;
+    font-weight: bold;
+} 
+
+hr{
+    background: -webkit-linear-gradient(180deg, #feac5e, #c779d0, #4bc0c8);
+    height: 5px;
+    border-radius: 5px;
+    border: none;
+}
