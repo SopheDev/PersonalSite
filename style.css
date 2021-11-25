@@ -61,11 +61,28 @@ ul {
     background-color: #00000000;
     font-size: 22px;
 }
-    
+
+.listRight {
+    float: right;
+    margin-right: 18px;
+}
+
+.listRight a {
+    color: white;
+    display: block;
+    text-align: center;
+    padding: none;
+    text-decoration: none;
+}
+
+.listRight a:hover:not(.active) {
+    background-color: #00000000;
+}
+
 li {
     float: left;
 }
-    
+
 li a {
     color: white;
     display: block;
@@ -73,12 +90,12 @@ li a {
     padding: 12px 18px;
     text-decoration: none;
 }
-    
+
 li a:hover:not(.active) {
     background-color: #797979;
     border-radius: 5px;
 }
-    
+
 .active {
     background-image: linear-gradient(90deg, #feac5e80, #c779d080, #4bc0c880);
     border-radius: 5px;
@@ -105,4 +122,24 @@ hr{
     height: 5px;
     border-radius: 5px;
     border: none;
+}
+
+.blinking {
+    animation: blinking 2s infinite linear;
+}
+
+@keyframes blinking {
+    0% {
+        opacity: 100%;
+    }
+    50% {
+        opacity: 20%;
+    }
+    100% {
+        opacity: 100%
+    }
+}
+
+.invis {
+    display: none;
 }
