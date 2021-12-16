@@ -69,7 +69,7 @@ ul {
 
 .listRight a {
     color: white;
-    display: block;
+    display: inline;
     text-align: center;
     padding: none;
     text-decoration: none;
